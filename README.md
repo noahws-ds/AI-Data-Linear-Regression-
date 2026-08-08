@@ -1,4 +1,4 @@
-# Predicting AI & Data with Linear Regression
+# AI Data Linear Regression
 
 In this project, I used linear regression to analyze and predict salaries for AI and Data Science roles. Using a synthetic Kaggle dataset of 5,000 AI/Data Science jobs, the project examines how factors such as experience level, company location, education, and other variables are associated with salary.
 
@@ -40,12 +40,13 @@ Finally, I created a bar graph showing the impact of each factor on salary. The 
 - Scikit-learn
 - Jupyter Notebook
 
-## Limitions 
-- This Dataset is synthetic, so the results don't fully represent real-world salary patterns.
-- Linear Regression may not capture the complex relationships between job characteristics and salary
-- The relationships found by the model show association, not actual proof that factors cause direct change in salary
+## Limitations
 
-## Author 
-Noah Alexander Weir-Shack - Data Science Major, University of Pittsburgh
+- This dataset is synthetic, so the results may not fully represent real-world salary patterns.
+- Linear regression may not capture complex relationships between job characteristics and salary.
+- The relationships found by the model show associations, not proof that specific factors directly cause changes in salary.
 
+## Author
 
+**Noah Alexander Weir-Shack**  
+Data Science Major, University of Pittsburgh
