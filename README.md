@@ -1,1 +1,1 @@
-# AI-Data-Linear-Regression-
+# AI Data Linear Regression
