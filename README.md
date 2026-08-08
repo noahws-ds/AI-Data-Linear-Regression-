@@ -1,34 +1,41 @@
 # AI Data Linear Regression
-In this project, I used Linear Regression to analyze and predict salaries for AI and Data Science roles. Using a synthetic Kaggle dataset of 5,000 AI/Data Science jobs, the project predicts how factors such as experience level, company location, education, and other variables correlate with salary. 
 
-The analysis also evaluates the limitations of standard linear regression models and tests if transforming the target variable can improve prediction performance. 
+In this project, I used linear regression to analyze and predict salaries for AI and Data Science roles. Using a synthetic Kaggle dataset of 5,000 AI/Data Science jobs, the project examines how factors such as experience level, company location, education, and other variables are associated with salary.
 
-## Project Objective 
-The First Objective of this project was to predict `salary_usd` and determine what features had the strongest or weakest association with compensation in the field of AI and Data Science.
+The analysis also evaluates the limitations of a standard linear regression model and tests whether applying a log transformation to the target variable can improve prediction performance.
 
-The second objective is to evaluate the model through residual analysis and determine if a log transformation of salary can improve the accuracy and address the weakness of the original model. 
+## Project Objective
 
-## Results 
-The baseline Linear Regression model achieved 
+The first objective of this project was to predict `salary_usd` and determine which features had the strongest or weakest associations with compensation in the fields of AI and Data Science.
+
+The second objective was to evaluate the model through residual analysis and determine whether a log transformation of salary could improve accuracy and address weaknesses in the original model.
+
+## Results
+
+The baseline linear regression model achieved:
+
 - **R²:** 0.779
-- **MAE:*** $19,588
+- **MAE:** $19,588
 - **RMSE:** $26,134
 
- The residual analysis showed that prediction errors became larger at the higher-end salaries, and my original scatterpoint model had produced some unrealistic negative salary predictions.
- This led me to train a second model using `log(salary_usd)`, which improved performance:
- - **R²:** 0.831
-- **MAE:*** $15,837
+The actual vs. predicted salary scatter plot showed that prediction errors became larger at higher salary levels, and the original model also produced some unrealistic negative salary predictions. Residual analysis further confirmed that the model's errors were not evenly distributed.
+
+This led me to train a second model using `log(salary_usd)`, which improved performance:
+
+- **R²:** 0.831
+- **MAE:** $15,837
 - **RMSE:** $22,808
 
-By using a log transformation, it improved the model in all three evaluation metrics and erased the problem of negative salary predictions
+The log transformation improved the model across all three evaluation metrics and eliminated the problem of negative salary predictions.
 
-After finishing this project, we took a final bar graph of the 'Impact of Each Factor on Salary.' we observed from the model that factors like seniority, company location, education level, and "ML" in the job title had the strongest impacts on salary
+Finally, I created a bar graph showing the impact of each factor on salary. The model showed that factors such as seniority, company location, education level, and having "ML" in the job title had some of the strongest associations with salary.
 
 ## Technologies Used
+
 - Python
 - Pandas
 - NumPy
-- Malplotlib
+- Matplotlib
 - Seaborn
 - Scikit-learn
-- Jupyter Notebook 
+- Jupyter Notebook
