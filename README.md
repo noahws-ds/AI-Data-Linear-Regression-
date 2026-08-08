@@ -39,3 +39,13 @@ Finally, I created a bar graph showing the impact of each factor on salary. The 
 - Seaborn
 - Scikit-learn
 - Jupyter Notebook
+
+## Limitions 
+- This Dataset is synthetic, so the results don't fully represent real-world salary patterns.
+- Linear Regression may not capture the complex relationships between job characteristics and salary
+- The relationships found by the model show association, not actual proof that factors cause direct change in salary
+
+## Author 
+Noah Alexander Weir-Shack - Data Science Major, University of Pittsburgh
+
+
