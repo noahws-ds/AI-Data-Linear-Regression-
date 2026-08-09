@@ -12,19 +12,14 @@ The second objective was to evaluate the model through residual analysis and det
 
 ## Results
 
-The baseline linear regression model achieved:
-
-- **R²:** 0.779
-- **MAE:** $19,588
-- **RMSE:** $26,134
+| Model | R² | MAE | RMSE |
+|---|---:|---:|---:|
+| Original Linear Regression | 0.779 | $19,588 | $26,134 |
+| Log-Transformed Linear Regression | **0.831** | **15,837** | **22,808** |
 
 The actual vs. predicted salary scatter plot showed that prediction errors became larger at higher salary levels, and the original model also produced some unrealistic negative salary predictions. Residual analysis further confirmed that the model's errors were not evenly distributed.
 
 This led me to train a second model using `log(salary_usd)`, which improved performance:
-
-- **R²:** 0.831
-- **MAE:** $15,837
-- **RMSE:** $22,808
 
 The log transformation improved the model across all three evaluation metrics and eliminated the problem of negative salary predictions.
 
