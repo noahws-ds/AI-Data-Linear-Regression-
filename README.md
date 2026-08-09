@@ -1,4 +1,4 @@
-# AI Data Linear Regression
+# Predicting AI & Data Science Salaries with Linear Regression
 
 In this project, I used linear regression to analyze and predict salaries for AI and Data Science roles. Using a synthetic Kaggle dataset of 5,000 AI/Data Science jobs, the project examines how factors such as experience level, company location, education, and other variables are associated with salary.
 
